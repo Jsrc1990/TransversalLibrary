@@ -24,7 +24,7 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Publish
-      uses: jsrc1990/publish-nuget@v2.5.2
+      uses: brandedoutcast/publish-nuget@v2.5.2
       with:
        PROJECT_FILE_PATH: TransversalLibrary/TransversalLibrary.csproj
        NUGET_KEY: ${{secrets.TRANSVERSALNUGETSECRET}}
