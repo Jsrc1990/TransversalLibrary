@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31313.79
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransversalLibrary", "TransversalLibrary\TransversalLibrary.csproj", "{30584B27-2232-47B2-8C6E-55AB2FC3FD32}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30584B27-2232-47B2-8C6E-55AB2FC3FD32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30584B27-2232-47B2-8C6E-55AB2FC3FD32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30584B27-2232-47B2-8C6E-55AB2FC3FD32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30584B27-2232-47B2-8C6E-55AB2FC3FD32}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3A2D12AC-EA38-47AC-8281-7D52DC2ED141}
+	EndGlobalSection
+EndGlobal
