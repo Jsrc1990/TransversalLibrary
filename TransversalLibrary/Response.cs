@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Net;
 
@@ -65,7 +66,20 @@ namespace TransversalLibrary
         /// <summary>
         /// Obtiene o establece la excepción
         /// </summary>
+        [JsonIgnore()]
         public Exception Exception { get; set; }
+
+        /// <summary>
+        /// Define el mensaje de la excepción
+        /// </summary>
+        [JsonProperty(nameof(Exception))]
+        public string MessageException
+        {
+            get
+            {
+                return Exception?.Message;
+            }
+        }
 
         #endregion
 
