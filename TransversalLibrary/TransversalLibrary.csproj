@@ -3,7 +3,7 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <Authors>Jsrc1990</Authors>
     <Company>None</Company>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
     <RepositoryUrl>https://github.com/Jsrc1990/TransversalLibrary</RepositoryUrl>
     <Description>Librería base para almacenar todo tipo recursos que se usan en otras librerías</Description>
   </PropertyGroup>
