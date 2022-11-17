@@ -61,28 +61,6 @@ namespace TransversalLibrary
 
         #endregion
 
-        #region EXCEPTION
-
-        /// <summary>
-        /// Obtiene o establece la excepción
-        /// </summary>
-        [JsonIgnore()]
-        public Exception Exception { get; set; }
-
-        /// <summary>
-        /// Define el mensaje de la excepción
-        /// </summary>
-        [JsonProperty(nameof(Exception))]
-        public string MessageException
-        {
-            get
-            {
-                return Exception?.Message;
-            }
-        }
-
-        #endregion
-
         #region ERRORS
 
         /// <summary>
