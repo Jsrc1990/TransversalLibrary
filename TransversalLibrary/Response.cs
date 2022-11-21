@@ -66,7 +66,7 @@ namespace TransversalLibrary
         /// <summary>
         /// Obtiene los errores
         /// </summary>
-        public List<string> Errors { get; } = new List<string>();
+        public List<string> Errors { get; set; } = new List<string>();
 
         #endregion
     }
