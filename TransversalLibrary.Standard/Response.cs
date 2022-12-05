@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Net;
 
 namespace TransversalLibrary.Standard
@@ -35,6 +34,31 @@ namespace TransversalLibrary.Standard
 
         #endregion
 
+        #region MESSAGE
+
+        /// <summary>
+        /// Define el mensaje de la respuesta
+        /// </summary>
+        private string _Message = string.Empty;
+
+        /// <summary>
+        /// Obtiene o establece el mensaje de la respuesta
+        /// </summary>
+        public string Message
+        {
+            get
+            {
+                return _Message;
+            }
+            set
+            {
+                _Message = value;
+                OnPropertyChanged();
+            }
+        }
+
+        #endregion
+
         #region DATA
 
         /// <summary>
@@ -60,21 +84,28 @@ namespace TransversalLibrary.Standard
 
         #endregion
 
-        #region EXCEPTION
+        #region ERRORS
 
         /// <summary>
-        /// Obtiene o establece la excepción
+        /// Define los errores
         /// </summary>
-        public Exception Exception { get; set; }
-
-        #endregion
-
-        #region ERRORS
+        private List<string> _Errors = new List<string>();
 
         /// <summary>
         /// Obtiene los errores
         /// </summary>
-        public List<string> Errors { get; } = new List<string>();
+        public List<string> Errors
+        {
+            get
+            {
+                return _Errors;
+            }
+            set
+            {
+                _Errors = value;
+                OnPropertyChanged();
+            }
+        }
 
         #endregion
     }

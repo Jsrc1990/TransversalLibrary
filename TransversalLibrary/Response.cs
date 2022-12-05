@@ -34,6 +34,31 @@ namespace TransversalLibrary
 
         #endregion
 
+        #region MESSAGE
+
+        /// <summary>
+        /// Define el mensaje de la respuesta
+        /// </summary>
+        private string _Message = string.Empty;
+
+        /// <summary>
+        /// Obtiene o establece el mensaje de la respuesta
+        /// </summary>
+        public string Message
+        {
+            get
+            {
+                return _Message;
+            }
+            set
+            {
+                _Message = value;
+                OnPropertyChanged();
+            }
+        }
+
+        #endregion
+
         #region DATA
 
         /// <summary>
@@ -62,9 +87,25 @@ namespace TransversalLibrary
         #region ERRORS
 
         /// <summary>
+        /// Define los errores
+        /// </summary>
+        private List<string> _Errors = new List<string>();
+
+        /// <summary>
         /// Obtiene los errores
         /// </summary>
-        public List<string> Errors { get; set; } = new List<string>();
+        public List<string> Errors
+        {
+            get
+            {
+                return _Errors;
+            }
+            set
+            {
+                _Errors = value;
+                OnPropertyChanged();
+            }
+        }
 
         #endregion
     }
