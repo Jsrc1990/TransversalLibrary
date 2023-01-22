@@ -14,7 +14,7 @@ namespace TransversalLibrary.Standard
         /// <summary>
         /// Define el código de estado Http
         /// </summary>
-        private HttpStatusCode? _HttpStatusCode;
+        private HttpStatusCode? _HttpStatusCode = System.Net.HttpStatusCode.OK;
 
         /// <summary>
         /// Obtiene o establece el código de estado Http
