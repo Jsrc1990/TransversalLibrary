@@ -18,9 +18,9 @@ namespace TransversalLibrary.Standard
         /// <summary>
         /// Notifica que el valor de la propiedad especificada de esta clase ha cambiado
         /// </summary>
-        public void OnPropertyChanged([CallerMemberName] string Name = "")
+        public void OnPropertyChanged([CallerMemberName] string name = "")
         {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(Name));
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
 
         #endregion
