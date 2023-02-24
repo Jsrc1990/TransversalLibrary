@@ -3,7 +3,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>Jsrc1990</Authors>
     <Company>None</Company>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
     <RepositoryUrl>https://github.com/Jsrc1990/TransversalLibrary</RepositoryUrl>
     <Description>Librería base para almacenar todo tipo recursos que se usan en otras librerías, la versión Standard apunta a multiples frameworks (.Net Framework, .Net Core. .Net5+, etc.). Para mayor información: https://learn.microsoft.com/en-us/dotnet/standard/net-standard?tabs=net-standard-2-0</Description>
   </PropertyGroup>
