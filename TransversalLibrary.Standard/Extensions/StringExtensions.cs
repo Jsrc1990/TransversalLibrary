@@ -60,10 +60,10 @@ namespace TransversalLibrary
         /// Debe tener una longitud mínima de 8 caracteres {8,}
         /// </remarks>
         /// <returns>True si el formato de la contraseña es correcto, False si no</returns>
-        public static bool ValidatePassword(this string password)
+        public static bool IsValidPassword(this string password)
         {
             // Patrón de expresión regular para validar el formato de una contraseña
-            string pattern = @"^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,}$";
+            string pattern = @"^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&.])[A-Za-z\d$@$!%*#?&.]{8,}$";
             Regex regex = new Regex(pattern);
             return regex.IsMatch(password);
         }

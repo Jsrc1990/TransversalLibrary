@@ -40,7 +40,7 @@ namespace TransversalLibrary.Standard
         /// <summary>
         /// Define el mensaje de la respuesta
         /// </summary>
-        private string _Message = string.Empty;
+        private string _Message = null;
 
         /// <summary>
         /// Obtiene o establece el mensaje de la respuesta
