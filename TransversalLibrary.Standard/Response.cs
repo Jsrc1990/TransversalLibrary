@@ -125,7 +125,7 @@ namespace TransversalLibrary.Standard
         {
             get
             {
-                return Errors?.Any() == true || (HttpStatusCode != System.Net.HttpStatusCode.OK || HttpStatusCode != System.Net.HttpStatusCode.Accepted);
+                return Errors?.Any() == true || !(HttpStatusCode == System.Net.HttpStatusCode.OK || HttpStatusCode == System.Net.HttpStatusCode.Accepted);
             }
         }
 
