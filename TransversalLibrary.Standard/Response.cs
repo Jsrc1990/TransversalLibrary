@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 
 namespace TransversalLibrary.Standard
@@ -114,6 +115,17 @@ namespace TransversalLibrary.Standard
             {
                 _Errors = value;
                 OnPropertyChanged();
+            }
+        }
+
+        /// <summary>
+        /// Indica si tiene errores o no
+        /// </summary>
+        public bool HasErrors
+        {
+            get
+            {
+                return Errors?.Any() == true || (HttpStatusCode != System.Net.HttpStatusCode.OK || HttpStatusCode != System.Net.HttpStatusCode.Accepted);
             }
         }
 
