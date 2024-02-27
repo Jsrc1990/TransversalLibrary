@@ -138,18 +138,9 @@ namespace TransversalLibrary.Standard
         /// </summary>
         /// <typeparam name="Y">El tipo genérico al cambiar</typeparam>
         /// <returns>La respuesta con el nuevo tipo genérico</returns>
-        public Response<Y> ChangeType<Y>()
+        public Response<Y> ChangeResponseType<Y>()
         {
-            try
-            {
-                T value = Data;
-                Y newValue = (value == null ? default(Y) : (Y)Convert.ChangeType(value, typeof(Y)));
-                return new Response<Y>() { HttpStatusCode = this?.HttpStatusCode, Message = this?.Message, Data = newValue, Errors = this?.Errors, Total = this?.Total ?? 0 };
-            }
-            catch (Exception ex)
-            {
-                return Response<Y>.ReturnInternalServerError($"Error al convertir del tipo {typeof(T)?.Name} al tipo {typeof(Y)?.Name}: Message: {ex?.Message}, InnerException: {ex?.InnerException?.Message}, StackTrace: {ex?.StackTrace}");
-            }
+            return new Response<Y>() { HttpStatusCode = this?.HttpStatusCode, Message = this?.Message, Errors = this?.Errors, Total = this?.Total ?? 0 };
         }
 
         #endregion
